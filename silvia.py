@@ -23,11 +23,6 @@ def flood(victim, vport, duration):
         sent = sent + 1
         print "Paket Sedang Diantar Ke Oleh Kurir "(sent, victim, vport)
 
-def main():
-    print len(sys.argv)
-    if len(sys.argv) != 4:
-        usage()
-    else:
         
 if __name__ == '__main__':
     main()
